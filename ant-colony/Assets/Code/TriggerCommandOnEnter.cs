@@ -5,7 +5,7 @@ public class TriggerCommandOnEnter : MonoBehaviour
 {
     const float TRIGGER_THRESHOLD = 1;
 
-    public List<Command> Commands;
+    public List<Command> Commands = new List<Command>();
 
     public bool isRepeatableTrigger = true;
 
