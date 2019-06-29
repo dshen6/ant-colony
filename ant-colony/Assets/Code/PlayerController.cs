@@ -2,6 +2,11 @@ using UnityEngine;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
+
+    private static PlayerController _instance;
+    public static PlayerController Instance { get { return _instance; } }
+
+    public float initial_position_x, initial_position_y, initial_position_z;
     const float REST_THRESHOLD = 0.25f;
     public float VELOCITY_DECAY = 0.90f;
     public Sprite[] RestSprites;
@@ -79,7 +84,8 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void Die() {
-        
+        Destroy(gameObject);
+        GameStateManager.Instance.OnDeath();
     }
 
     public void OnBButton() {
