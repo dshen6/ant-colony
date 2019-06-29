@@ -29,11 +29,11 @@ using UnityEngine;
         switch (command.CommandType)
         {
             case Command.Type.StartDialogue: 
-                DialogueManager.Instance.ShowDialogue(command.Dialogue);
+                DialogueManager.Instance.StartDialogue(command.Dialogue);
                 break;
-            case Command.Spawn:
+            case Command.Type.Spawn:
                 break;
-            case Command.Die:
+            case Command.Type.Die:
                 break;
             default:
                 throw new System.Exception("Unimplemented command " + command);
