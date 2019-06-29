@@ -15,7 +15,7 @@ public class TriggerCommandOnEnter : MonoBehaviour
         if (!isRepeatableTrigger) {return;}
 
         PlayerController player = other.gameObject.GetComponent<PlayerController>();;
-        //Commands.ForEach(c => CommandManager.Instance.addCommand(c));
+        Commands.ForEach(c => CommandManager.Instance.addCommand(c));
         player.Die();
     }
 

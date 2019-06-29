@@ -34,7 +34,6 @@ public class GameStateManager : MonoBehaviour
     }
 
     void Start() {
-        // TODO: instantiate the first player
         var initialPlayer = getNextPlayer();
         Instantiate(initialPlayer, initialPosition, Quaternion.identity);
     }
