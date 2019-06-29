@@ -7,7 +7,9 @@ public class GameStateManager : MonoBehaviour
 
     public Vector3 initialPosition;
 
-    public GameObject playerPrefab;    
+    // TODO: this will probably need to be a list of deadplayerprefabs and their dead positions
+    public GameObject deadplayerPrefab;
+    public GameObject playerPrefab;
 
     void Awake() {
         if (_instance == null){
@@ -15,7 +17,8 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
-    public void OnDeath(){
+    public void OnDeath(Vector3 deathPosition){
+        Instantiate(deadplayerPrefab, deathPosition, Quaternion.identity);
         Instantiate(playerPrefab, initialPosition, Quaternion.identity);
     }
 }
