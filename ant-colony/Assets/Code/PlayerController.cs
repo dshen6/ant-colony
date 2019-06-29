@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void Die() {
-        Destroy(gameObject);
+        Destroy(this.gameObject);
         GameStateManager.Instance.OnDeath();
     }
 
