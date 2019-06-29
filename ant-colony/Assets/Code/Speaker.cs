@@ -23,7 +23,7 @@ public class Speaker : MonoBehaviour
                 dialogueNode = LoveDialogue;
             break;
             case DialogueNodeAsset.DialogueType.AtFork:
-                dialogueNode = LoveDialogue;
+                dialogueNode = AtForkDialogue;
             break;
             case DialogueNodeAsset.DialogueType.Midrun:
                 dialogueNode = MidrunDialogue;

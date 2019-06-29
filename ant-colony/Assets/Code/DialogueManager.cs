@@ -27,7 +27,9 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(DialogueNodeAsset.DialogueType DialogueType)
     {
+        Debug.Log("What");
         Speaker speaker = PlayerController.Instance.gameObject.GetComponent<Speaker>();
-        Debug.Log("Starting conversation: ");
+        DialogueNodeAsset dialogueNodeAsset = speaker.GetDialogueNodeForType(DialogueType);
+        Debug.Log("Starting conversation: " + dialogueNodeAsset);
     }
 }

@@ -14,9 +14,9 @@ public class TriggerCommandOnEnter : MonoBehaviour
         // If the trigger is not repeatable then we stop here.
         if (!isRepeatableTrigger) {return;}
 
-        PlayerController player = other.gameObject.GetComponent<PlayerController>();;
-        //Commands.ForEach(c => CommandManager.Instance.addCommand(c));
-        player.Die();
+        PlayerController player = other.gameObject.GetComponent<PlayerController>();
+        Commands.ForEach((Command c) => CommandManager.Instance.addCommand(c));
+        // player.Die();
     }
 
     public void OnDrawGizmos()
