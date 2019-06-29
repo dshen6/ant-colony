@@ -1,0 +1,105 @@
+using UnityEngine;
+using System.Collections;
+
+public class PlayerController : MonoBehaviour {
+    const float REST_THRESHOLD = 0.25f;
+    public float VELOCITY_DECAY = 0.90f;
+    public Sprite[] RestSprites;
+    public Sprite[] MoveSprites;
+    public float MoveFramerate = 5;
+    public float RestFramerate = 3;
+    float mFrameCounter;
+    public float MovementSpeed = 5;
+    Vector3 mVelocity = Vector3.zero;
+    Vector3 mFacingDirection = Vector3.right;
+    private CharacterController mCharController;
+
+    private SpriteRenderer mPlayerSprite;
+
+    private State mCurrentState;
+
+    public enum State
+    {
+        Resting,
+        Moving,
+    }
+
+    void Awake() {
+         mCharController = GetComponent<CharacterController>();
+         mPlayerSprite = GetComponent<SpriteRenderer>();
+    }
+    void Update() {
+        if (mVelocity.magnitude < REST_THRESHOLD)
+        {
+            TransitionState(State.Resting);
+        }
+
+        mCharController.Move(mVelocity * Time.deltaTime);
+
+        Sprite[] spriteArray = null;
+        switch (mCurrentState)
+        {
+            case State.Moving:
+                spriteArray = MoveSprites;
+                mFrameCounter += MoveFramerate * (mVelocity.magnitude / MovementSpeed) * Time.deltaTime;
+                break;
+
+            case State.Resting:
+                spriteArray = RestSprites;
+                mFrameCounter += RestFramerate * Time.deltaTime;
+                break;
+        }
+        
+        if (spriteArray != null && spriteArray.Length > 0)
+        {
+            int frame = ((int)mFrameCounter) % spriteArray.Length;
+            mPlayerSprite.sprite = spriteArray[frame];
+        }
+
+    }
+
+    void FixedUpdate()
+    {
+        mVelocity *= VELOCITY_DECAY;
+    }
+
+
+    public void OnAxisInput(float horizontal, float vertical) {
+        mVelocity += new Vector3(MovementSpeed * horizontal, MovementSpeed * vertical, 0);
+        if (Mathf.Abs(horizontal) > .1f || Mathf.Abs(vertical) > .1f) {
+            if (Mathf.Abs(horizontal) > .1f) {
+                mFacingDirection = horizontal > 0 ? Vector3.right : Vector3.left;
+            }
+            TransitionState(State.Moving);
+        }
+        mPlayerSprite.flipX = mFacingDirection != Vector3.right;
+    }
+
+    public void OnAButton() {
+    }
+
+    public void Die() {
+        
+    }
+
+    public void OnBButton() {
+    }
+
+    public void OnTriggerEnter(Collider other) {
+        // MonoBehaviour[] list = other.gameObject.GetComponents<MonoBehaviour>();
+        // foreach(MonoBehaviour mb in list)
+        // {
+        // }
+    }
+
+    public void OnTriggerExit(Collider other) {
+        // MonoBehaviour[] list = other.gameObject.GetComponents<MonoBehaviour>();
+        // foreach(MonoBehaviour mb in list)
+        // {
+        // }
+    }
+    void TransitionState(State state)
+    {
+        mCurrentState = state;
+    }
+}
