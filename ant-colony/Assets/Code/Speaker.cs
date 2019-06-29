@@ -29,7 +29,7 @@ public class Speaker : MonoBehaviour
                 dialogueNode = MidrunDialogue;
             break;
             default:
-            
+                throw new System.Exception("Unimplemented type" + DialogueType);
         }
         return dialogueNode;
     }
