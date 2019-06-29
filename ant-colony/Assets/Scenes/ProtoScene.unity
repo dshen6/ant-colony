@@ -342,8 +342,10 @@ MonoBehaviour:
   initialPosition: {x: 0, y: -3.1, z: 0}
   deadplayerPrefab: {fileID: 2088842123983369595, guid: 3141b53ec992d415280564ee9400e4d7,
     type: 3}
-  playerPrefab: {fileID: 2118182354648896695, guid: 5ec933f3a7b7543a2adc320001450014,
-    type: 3}
+  playerPrefabs:
+  - {fileID: 2118182354648896695, guid: 5ec933f3a7b7543a2adc320001450014, type: 3}
+  - {fileID: 2118182354648896695, guid: 5ec933f3a7b7543a2adc320001450014, type: 3}
+  - {fileID: 2118182354648896695, guid: 5ec933f3a7b7543a2adc320001450014, type: 3}
 --- !u!4 &799802606
 Transform:
   m_ObjectHideFlags: 0
@@ -791,6 +793,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2118182354648896695, guid: 5ec933f3a7b7543a2adc320001450014,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2118182354648896692, guid: 5ec933f3a7b7543a2adc320001450014,
         type: 3}
