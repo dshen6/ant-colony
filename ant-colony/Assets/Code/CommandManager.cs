@@ -1,13 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Command
-{
-    PlaceHolder1,
-    PlaceHolder2,
-    PlaceHolder3
-}
-
  public class CommandManager : MonoBehaviour
 {
     private static CommandManager _instance;
@@ -33,16 +26,14 @@ public enum Command
 
     public void addCommand(Command command) {
         // TOOD: do something with these commands
-        switch (command)
+        switch (command.CommandType)
         {
-            case Command.PlaceHolder1: 
-                Debug.Log(Command.PlaceHolder1.ToString());
+            case Command.Type.StartDialogue: 
+                DialogueManager.Instance.ShowDialogue(command.Dialogue);
                 break;
-            case Command.PlaceHolder2:
-                Debug.Log(Command.PlaceHolder2.ToString());
+            case Command.Spawn:
                 break;
-            case Command.PlaceHolder3:
-                Debug.Log(Command.PlaceHolder3.ToString());
+            case Command.Die:
                 break;
             default:
                 throw new System.Exception("Unimplemented command " + command);
