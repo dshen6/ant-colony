@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
-
+    
  public class CommandManager : MonoBehaviour
 {
     private static CommandManager _instance;

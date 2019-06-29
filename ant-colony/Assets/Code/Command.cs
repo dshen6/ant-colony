@@ -8,21 +8,21 @@ public struct Command
     public enum Type
     {
         Move,
-        ShowDialog, // DialogType
+        ShowDialogue, // DialogueType
         Die,
         LoadScene,
         Spawn,
         Win
     }
     public Type CommandType;
-    public DialogType DialogType;
+    public Dialogue.DialogueType DialogueType;
     public string SceneName;
 
-    public static Command ShowDialogCommand(DialogType dialogType)
+    public static Command ShowDialogCommand(Dialogue.DialogueType DialogueType)
     {
         Command showDialogCommand = new Command();
-        showDialogCommand.CommandType = Command.Type.ShowDialog;
-        showDialogCommand.DialogType = dialogType;
+        showDialogCommand.CommandType = Command.Type.ShowDialogue;
+        showDialogCommand.DialogueType = DialogueType;
         return showDialogCommand;
     }
 }
