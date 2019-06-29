@@ -5,7 +5,7 @@ public class TriggerCommandOnEnter : MonoBehaviour
 {
     const float TRIGGER_THRESHOLD = 1;
 
-    public List<Command> Commands = new List<Command>();
+    public List<Command> commands = new List<Command>();
 
     public bool isRepeatableTrigger = true;
 
@@ -15,7 +15,7 @@ public class TriggerCommandOnEnter : MonoBehaviour
         if (!isRepeatableTrigger) {return;}
 
         PlayerController player = other.gameObject.GetComponent<PlayerController>();;
-        Commands.ForEach(c => CommandManager.Instance.addCommand(c));
+        commands.ForEach(c => CommandManager.Instance.addCommand(c));
         player.Die();
     }
 
