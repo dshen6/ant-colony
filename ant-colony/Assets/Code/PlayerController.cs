@@ -5,8 +5,6 @@ public class PlayerController : MonoBehaviour {
 
     private static PlayerController _instance;
     public static PlayerController Instance { get { return _instance; } }
-
-    public float initial_position_x, initial_position_y, initial_position_z;
     const float REST_THRESHOLD = 0.25f;
     public float VELOCITY_DECAY = 0.90f;
     public Sprite[] RestSprites;
@@ -32,6 +30,9 @@ public class PlayerController : MonoBehaviour {
     void Awake() {
          mCharController = GetComponent<CharacterController>();
          mPlayerSprite = GetComponent<SpriteRenderer>();
+         if (_instance == null){
+            _instance = this;
+        }
     }
     void Update() {
         if (mVelocity.magnitude < REST_THRESHOLD)
