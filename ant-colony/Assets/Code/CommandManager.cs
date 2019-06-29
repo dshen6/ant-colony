@@ -1,13 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Command
-{
-    PlaceHolder1,
-    PlaceHolder2,
-    PlaceHolder3
-}
-
  public class CommandManager : MonoBehaviour
 {
     private static CommandManager _instance;
