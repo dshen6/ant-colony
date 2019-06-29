@@ -42,7 +42,7 @@ public class PlayerInput : MonoBehaviour {
 		vertical = Input.GetAxisRaw(Vertical_INPUT) + Input.GetAxisRaw(Vertical_GAMEPAD);
 
         controller.OnAxisInput(horizontal, vertical);
-
+		
 		if (Input.GetButtonDown(A_INPUT) || Input.GetButtonDown(A_GAMEPAD)) {
             controller.OnAButton();
 		}
