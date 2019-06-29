@@ -18,4 +18,9 @@ public class TriggerCommandOnEnter : MonoBehaviour
         Commands.ForEach(c => CommandManager.Instance.addCommand(c));
         player.Die();
     }
+
+    public void OnDrawGizmos()
+    {
+        Gizmos.DrawSphere(transform.position, TRIGGER_THRESHOLD);
+    }
 }
