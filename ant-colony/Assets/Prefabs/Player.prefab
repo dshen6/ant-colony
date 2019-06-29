@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2118182354648896699}
   - component: {fileID: 2118182354648896698}
   - component: {fileID: 2118182354648896696}
-  - component: {fileID: 2118182354648896697}
+  - component: {fileID: 5593931009520709035}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -95,9 +95,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e7ead8791524811a7c7d455d8e9e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initial_position_x: 0
-  initial_position_y: 0
-  initial_position_z: 0
   VELOCITY_DECAY: 0.9
   RestSprites: []
   MoveSprites: []
@@ -134,17 +131,18 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!136 &2118182354648896697
-CapsuleCollider:
+--- !u!114 &5593931009520709035
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118182354648896695}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 4
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbf70530361874c0092d59bd0832028c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueType: 0
+    sentences: []

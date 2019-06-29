@@ -85,8 +85,9 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void Die() {
+        var deathPosition = this.transform.position;
         Destroy(this.gameObject);
-        GameStateManager.Instance.OnDeath();
+        GameStateManager.Instance.OnDeath(deathPosition);
     }
 
     public void OnBButton() {
