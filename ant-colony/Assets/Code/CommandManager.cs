@@ -29,7 +29,7 @@ using UnityEngine;
         switch (command.CommandType)
         {
             case Command.Type.StartDialogue: 
-                DialogueManager.Instance.StartDialogue(command.Dialogue);
+                DialogueManager.Instance.StartDialogue(command.DialogType);
                 break;
             case Command.Type.Spawn:
                 break;

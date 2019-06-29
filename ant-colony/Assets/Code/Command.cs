@@ -15,14 +15,14 @@ public struct Command
         Win
     }
     public Type CommandType;
-    public Dialogue Dialogue;
+    public DialogueNodeAsset.DialogueType DialogType;
     public string SceneName;
 
-    public static Command StartDialogCommand(Dialogue Dialogue)
-    {
-        Command showDialogCommand = new Command();
-        showDialogCommand.CommandType = Command.Type.StartDialogue;
-        showDialogCommand.Dialogue = Dialogue;
-        return showDialogCommand;
-    }
+    // public static Command StartDialogCommand(DialogueNodeAsset dialogueNodeAsset)
+    // {
+    //     Command showDialogCommand = new Command();
+    //     showDialogCommand.CommandType = Command.Type.StartDialogue;
+    //     showDialogCommand.DialogueNodeAsset = dialogueNodeAsset;
+    //     return showDialogCommand;
+    // }
 }
