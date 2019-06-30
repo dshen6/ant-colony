@@ -33,15 +33,13 @@ public class PlayerController : MonoBehaviour {
          mCharController = GetComponent<CharacterController>();
          mPlayerSprite = GetComponent<SpriteRenderer>();
          SpriteRenderer[] lightSources = GetComponentsInChildren<SpriteRenderer>();
-         int selectedLightSource = (int) Random.Range(0.0f, 3.0f);
-         Debug.Log(lightSources.Length);
-         Debug.Log(selectedLightSource);
+         int selectedLightSource = (int) Random.Range(1.0f, 4.0f);
          for (int i = 1; i < lightSources.Length; i++) {
-             if (i != selectedLightSource + 1) {
+             if (i != selectedLightSource) {
                  lightSources[i].enabled = false;
              }
          }
-         mLightSprite = lightSources[selectedLightSource + 1];
+         mLightSprite = lightSources[selectedLightSource];
          mLightSprite.enabled = true;
         if (_instance != this)
         {
