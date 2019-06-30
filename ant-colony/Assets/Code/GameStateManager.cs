@@ -36,6 +36,7 @@ public class GameStateManager : MonoBehaviour
 
     public void OnDeath(Vector3 deathPosition){
         Instantiate(deadPlayerPrefab, deathPosition, Quaternion.identity);
+        HeartManager.Instance.LoseHealth();
     }
 
     public void SpawnPlayer() {
