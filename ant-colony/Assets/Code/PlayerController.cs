@@ -30,7 +30,8 @@ public class PlayerController : MonoBehaviour {
     void Awake() {
          mCharController = GetComponent<CharacterController>();
          mPlayerSprite = GetComponent<SpriteRenderer>();
-         if (_instance == null){
+        if (_instance != this)
+        {
             _instance = this;
         }
     }
