@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 6b5037ba06747bb46a0e2be0f7854974
+guid: de714bddbef1043c3948667064032d67
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4648505913544041813
-    second: ant_headband_walk_sprite_sheet_0
+      213: 3279324586877412333
+    second: ant_base_victory_sprite_sheet_0
   - first:
-      213: -3991995425220816680
-    second: ant_headband_walk_sprite_sheet_1
+      213: -4829933543849158895
+    second: ant_base_victory_sprite_sheet_1
   - first:
-      213: 6615357611070035983
-    second: ant_headband_walk_sprite_sheet_2
+      213: -4405560314338761213
+    second: ant_base_victory_sprite_sheet_2
   - first:
-      213: 6703428723785922494
-    second: ant_headband_walk_sprite_sheet_3
+      213: 8422805320509095372
+    second: ant_base_victory_sprite_sheet_3
+  - first:
+      213: -3800103173839989868
+    second: ant_base_victory_sprite_sheet_4
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -75,7 +78,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -86,7 +89,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,7 +99,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ant_headband_walk_sprite_sheet_0
+      name: ant_base_victory_sprite_sheet_0
       rect:
         serializedVersion: 2
         x: 2
@@ -110,14 +113,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a00aa700efe53446eb8d5d76d9875a3f
-      internalID: 4648505913544041813
+      spriteID: 7657f8546d60942c8b0293f6b0b4511b
+      internalID: 3279324586877412333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ant_headband_walk_sprite_sheet_1
+      name: ant_base_victory_sprite_sheet_1
       rect:
         serializedVersion: 2
         x: 18
@@ -131,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dd9cdb97731e49169c49a54522c2034
-      internalID: -3991995425220816680
+      spriteID: e986ba13b32ab4637be48e237faa77df
+      internalID: -4829933543849158895
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ant_headband_walk_sprite_sheet_2
+      name: ant_base_victory_sprite_sheet_2
       rect:
         serializedVersion: 2
         x: 34
@@ -152,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acfd8ce2cb98d44b19620560e6d1e4a0
-      internalID: 6615357611070035983
+      spriteID: b7aa1610ca1394a9f911599ce76b895e
+      internalID: -4405560314338761213
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ant_headband_walk_sprite_sheet_3
+      name: ant_base_victory_sprite_sheet_3
       rect:
         serializedVersion: 2
         x: 50
@@ -173,8 +176,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1b4f74d6fefd64593b548217e94904c2
-      internalID: 6703428723785922494
+      spriteID: 1b627de87c5b34810bffcdd38c46706b
+      internalID: 8422805320509095372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ant_base_victory_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d23572ed2163442f9575143e8f31f54
+      internalID: -3800103173839989868
       vertices: []
       indices: 
       edges: []
@@ -182,7 +206,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: eda16071f1df04fcfb3d82544052ad87
+    spriteID: d171981adcb5f4999a514e653591d11a
     internalID: 0
     vertices: []
     indices: 
