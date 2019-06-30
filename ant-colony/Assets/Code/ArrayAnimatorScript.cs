@@ -12,7 +12,7 @@ public class ArrayAnimatorScript : MonoBehaviour
 
     public bool playOnStart = false;
     public bool repeatForever = false;
-    public bool removeOnFinish = true;
+    public bool removeOnFinish = false;
     public float startDelayMs = 0f;
 
     private void Awake()
@@ -22,8 +22,12 @@ public class ArrayAnimatorScript : MonoBehaviour
 
     void Start() {
         if (playOnStart) {
-            StartCoroutine(Animate());
+            Play();
         }
+    }
+
+    public void Play() {
+        StartCoroutine(Animate());
     }
 
     public IEnumerator Animate()

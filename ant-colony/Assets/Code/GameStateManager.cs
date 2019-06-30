@@ -32,6 +32,7 @@ public class GameStateManager : MonoBehaviour
 
     void Start() {
         SpawnPlayer();
+        // Shuffle players
     }
 
     public void OnDeath(Vector3 deathPosition){
