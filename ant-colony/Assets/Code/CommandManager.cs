@@ -28,7 +28,7 @@ using UnityEngine;
         switch (command.CommandType)
         {
             case Command.Type.StartDialogue: 
-                DialogueManager.Instance.StartDialogue(command.DialogType);
+                DialogueManager.Instance.StartDialogue(command.DialogueType);
                 break;
             case Command.Type.Spawn:
                 GameStateManager.Instance.SpawnPlayer();
