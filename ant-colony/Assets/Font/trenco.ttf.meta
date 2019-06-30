@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 5c0f37e7515d943a7b03e53eb0185507
+=======
+guid: 132dcae9e0d7b4fa480ecb4b8babc8b4
+>>>>>>> e5e59ef... add lights and some prefabs
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4

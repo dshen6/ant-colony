@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 1dda822006be043668400161715cda81
+=======
+guid: 9f0ea711466e4453d83aed91b0ad07d6
+>>>>>>> e5e59ef... add lights and some prefabs
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
