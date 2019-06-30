@@ -11,6 +11,7 @@ public class DialogueNodeAsset : ScriptableObject
         Midrun,
         AtFork,
         Love,
+        Bio,
     }
 
     public List<Command> commands;
