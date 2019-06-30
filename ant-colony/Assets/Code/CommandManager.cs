@@ -25,15 +25,16 @@ using UnityEngine;
     }
 
     public void addCommand(Command command) {
-        // TOOD: do something with these commands
         switch (command.CommandType)
         {
             case Command.Type.StartDialogue: 
                 DialogueManager.Instance.StartDialogue(command.DialogType);
                 break;
             case Command.Type.Spawn:
+                GameStateManager.Instance.SpawnPlayer();
                 break;
             case Command.Type.Die:
+                PlayerController.Instance.Die();
                 break;
             default:
                 throw new System.Exception("Unimplemented command " + command);

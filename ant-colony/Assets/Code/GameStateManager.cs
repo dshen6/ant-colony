@@ -6,10 +6,10 @@ public class GameStateManager : MonoBehaviour
     private static GameStateManager _instance;
     public static GameStateManager Instance { get { return _instance; } }
 
-    public Vector3 initialPosition;
+    public Vector3 initialPlayerPosition;
 
     // TODO: this will probably need to be a list of deadplayerprefabs and their dead positions
-    public GameObject deadplayerPrefab;
+    public GameObject deadPlayerPrefab;
 
     // TODO: List of player prefabs to grab from
 
@@ -34,15 +34,17 @@ public class GameStateManager : MonoBehaviour
     }
 
     void Start() {
-        var initialPlayer = getNextPlayer();
-        Instantiate(initialPlayer, initialPosition, Quaternion.identity);
+        SpawnPlayer();
     }
 
     public void OnDeath(Vector3 deathPosition){
-        Instantiate(deadplayerPrefab, deathPosition, Quaternion.identity);
+        Instantiate(deadPlayerPrefab, deathPosition, Quaternion.identity);
+    }
+
+    public void SpawnPlayer() {
         var nextPlayer = this.getNextPlayer();
         if (nextPlayer != null) {
-            Instantiate(nextPlayer, initialPosition, Quaternion.identity);
+            Instantiate(nextPlayer, initialPlayerPosition, Quaternion.identity);
         } else {
             // TODO: GAME OVER
             Debug.Log("GAME OVER");
