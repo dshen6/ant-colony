@@ -15,7 +15,7 @@ public struct Command
         Win
     }
     public Type CommandType;
-    public DialogueNodeAsset.DialogueType DialogType;
+    public DialogueNodeAsset.DialogueType DialogueType;
     public string SceneName;
 
     // public static Command StartDialogCommand(DialogueNodeAsset dialogueNodeAsset)
