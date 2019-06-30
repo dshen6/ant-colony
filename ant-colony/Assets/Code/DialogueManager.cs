@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class DialogueManager : MonoBehaviour
 {
@@ -9,6 +11,9 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager Instance { get { return _instance; } }
 
     public Queue<string> sentenceQueue;
+    public Text dialogueText;
+
+    public Animator animator;
 
     void Awake() {
          if (_instance == null){
@@ -36,8 +41,7 @@ public class DialogueManager : MonoBehaviour
         DialogueNodeAsset asset = speaker.GetDialogueNodeForType(DialogueType);
         Debug.Log("Starting conversation");
         Debug.Log(String.Join(",", asset.sentences));
-    }
-    /*
+   
         sentenceQueue.Clear();
 
         foreach (string sentence in asset.sentences)
@@ -50,6 +54,7 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        Debug.Log("Display Next Sentence");
         if (sentenceQueue.Count == 0)
         {
             EndDialogue();
@@ -58,12 +63,24 @@ public class DialogueManager : MonoBehaviour
 
         string currentSentence = sentenceQueue.Dequeue();
         Debug.Log(currentSentence);
-
+        StopAllCoroutines();
+        StartCoroutine(TypeSentence(currentSentence));
     }
+
+    IEnumerator TypeSentence(string sentence)
+    {
+        dialogueText.text = "";
+        foreach (char letter in sentence.ToCharArray())
+        {
+            dialogueText.text += letter;
+            yield return null;
+        }
+    }
+
 
     public void EndDialogue()
     {
         Debug.Log("we done");
     }
-    */
+
 }
