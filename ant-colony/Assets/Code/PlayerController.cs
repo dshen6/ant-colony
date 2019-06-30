@@ -82,6 +82,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void OnAButton() {
+        DialogueManager.Instance.DisplayNextSentence();
     }
 
     public void Die() {
