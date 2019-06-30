@@ -8,6 +8,12 @@ TextureImporter:
   - first:
       213: 4861353650017532137
     second: ant_dolphin_walk_sprite_sheet_1
+  - first:
+      213: 5798088824716640782
+    second: ant_dolphin_walk_sprite_sheet_2
+  - first:
+      213: -7535446106677024946
+    second: ant_dolphin_walk_sprite_sheet_3
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -37,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -51,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -69,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -80,7 +86,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -95,8 +101,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 48
-        height: 17
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -104,7 +110,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6ee843646d4d4c45a2ddb6f2ea38ce0
+      spriteID: 5eefa4134e9d1415fb5db4ac7873092f
       internalID: -6528658617951112927
       vertices: []
       indices: 
@@ -112,6 +118,48 @@ TextureImporter:
       weights: []
     - serializedVersion: 2
       name: ant_dolphin_walk_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec41da63f925c496fb8d95ca90dcb28a
+      internalID: 4861353650017532137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ant_dolphin_walk_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d0bb34aab0bc43cd8fdcf972529b0cc
+      internalID: 5798088824716640782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ant_dolphin_walk_sprite_sheet_3
       rect:
         serializedVersion: 2
         x: 48
@@ -125,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37719c7f783a141e282d59b7f9f927e7
-      internalID: 4861353650017532137
+      spriteID: 80b481e91845a46309f18d1135fbfe62
+      internalID: -7535446106677024946
       vertices: []
       indices: 
       edges: []
@@ -134,7 +182,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 6efc4b09185124641adb8f8743e40564
+    spriteID: 3acfe1343a0404c9ea55327379332156
     internalID: 0
     vertices: []
     indices: 
