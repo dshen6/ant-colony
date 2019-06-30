@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
     public float MovementSpeed = 5;
     Vector3 mVelocity = Vector3.zero;
     Vector3 mFacingDirection = Vector3.left;
-    private CharacterController mCharController;
+    public CharacterController mCharController;
 
     private SpriteRenderer mPlayerSprite;
 
