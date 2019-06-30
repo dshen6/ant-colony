@@ -8,15 +8,15 @@ public class TriggerCommandOnEnter : MonoBehaviour
     public List<Command> commands = new List<Command>();
 
     public bool isRepeatableTrigger = true;
-    private bool hasTriggered = false;
 
     public void OnTriggerEnter(Collider other) {
+
         // If the trigger is not repeatable then we stop here.
-        if (hasTriggered && !isRepeatableTrigger) {
-            return;
-        }
-        CommandManager.Instance.addCommands(commands);
-        hasTriggered = true;
+        if (!isRepeatableTrigger) {return;}
+
+        PlayerController player = other.gameObject.GetComponent<PlayerController>();;
+        commands.ForEach(c => CommandManager.Instance.addCommand(c));
+        player.Die();
     }
 
     public void OnDrawGizmos()
