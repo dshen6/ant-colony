@@ -83,5 +83,29 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 7aa76de5d2c13461e93357c2f9aaf844,
         type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -4471319647498590330, guid: 2d0bad1a6d495f347b681e6f30a3e472,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: -6803830816701626283, guid: 2d0bad1a6d495f347b681e6f30a3e472,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 3406388073366779011, guid: 2d0bad1a6d495f347b681e6f30a3e472,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 1782408047169422576, guid: 2d0bad1a6d495f347b681e6f30a3e472,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d08d59879a4a84f95a1b568e339eb335, type: 3}
