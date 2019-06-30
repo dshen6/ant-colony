@@ -30,6 +30,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: DolphinVariant
       objectReference: {fileID: 0}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -6528658617951112927, guid: 37e2d0a50d1f7e84fa59c1a3ebf6a735,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 4861353650017532137, guid: 37e2d0a50d1f7e84fa59c1a3ebf6a735,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 5798088824716640782, guid: 37e2d0a50d1f7e84fa59c1a3ebf6a735,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -7535446106677024946, guid: 37e2d0a50d1f7e84fa59c1a3ebf6a735,
+        type: 3}
+    - target: {fileID: 3146535611083242955, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 736bdabf0dbda4a7c847f3c6aeb4d649,
+        type: 3}
     - target: {fileID: 3146535611083242954, guid: d08d59879a4a84f95a1b568e339eb335,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -95,12 +125,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3146535611083242955, guid: d08d59879a4a84f95a1b568e339eb335,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 736bdabf0dbda4a7c847f3c6aeb4d649,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d08d59879a4a84f95a1b568e339eb335, type: 3}
 --- !u!1 &8435283997212180728 stripped
