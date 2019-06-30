@@ -6,15 +6,18 @@ public class TriggerCommandOnEnter : MonoBehaviour
     const float TRIGGER_THRESHOLD = 1;
 
     public List<Command> commands = new List<Command>();
-
+    private GameObject mostRecentTrigger;
     public bool isRepeatableTrigger = true;
     private bool hasTriggered = false;
 
     public void OnTriggerEnter(Collider other) {
-        // If the trigger is not repeatable then we stop here.
+        if (mostRecentTrigger == other.gameObject) {
+            return;
+        }
         if (hasTriggered && !isRepeatableTrigger) {
             return;
         }
+        mostRecentTrigger = other.gameObject;
         CommandManager.Instance.addCommands(commands);
         hasTriggered = true;
     }

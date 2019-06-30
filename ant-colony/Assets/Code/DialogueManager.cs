@@ -17,7 +17,6 @@ public class DialogueManager : MonoBehaviour
 
     public DialogueNodeAsset asset;
 
-
     void Awake() {
          if (_instance == null){
             _instance = this;
@@ -39,8 +38,6 @@ public class DialogueManager : MonoBehaviour
     {
         Speaker speaker = PlayerController.Instance.gameObject.GetComponent<Speaker>();
         asset = speaker.GetDialogueNodeForType(DialogueType);
-        Debug.Log("Starting conversation");
-        // Debug.Log(String.Join(",", asset.sentences));
         PlayerController.Instance.NotifyInDialogue(true);
         sentenceQueue.Clear();
 
@@ -54,7 +51,6 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        Debug.Log("Display Next Sentence");
         if (sentenceQueue.Count == 0)
         {
             EndDialogue();
@@ -62,7 +58,6 @@ public class DialogueManager : MonoBehaviour
         }
 
         string currentSentence = sentenceQueue.Dequeue();
-        Debug.Log(currentSentence);
         StopAllCoroutines();
         StartCoroutine(TypeSentence(currentSentence));
     }
@@ -83,8 +78,6 @@ public class DialogueManager : MonoBehaviour
         PlayerController.Instance.NotifyInDialogue(false);
         CommandManager.Instance.addCommands(asset.commands);
         dialogueText.text = "";
-
-        Debug.Log("we done");
     }
 
 }
