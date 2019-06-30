@@ -13,4 +13,7 @@ MonoBehaviour:
   m_Name: ten-gallon-bio
   m_EditorClassIdentifier: 
   commands: []
-  sentences: []
+  sentences:
+  - The last of his family name, Chuck is just looking for a nice gal to settle down
+    with and start a family. He dreams of moving out west and starting an organic
+    farm.
