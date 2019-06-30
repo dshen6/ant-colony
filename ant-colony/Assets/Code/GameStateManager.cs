@@ -8,10 +8,7 @@ public class GameStateManager : MonoBehaviour
 
     public Vector3 initialPlayerPosition;
 
-    // TODO: this will probably need to be a list of deadplayerprefabs and their dead positions
     public GameObject deadPlayerPrefab;
-
-    // TODO: List of player prefabs to grab from
 
     public List<GameObject> playerPrefabs;
 
@@ -28,7 +25,7 @@ public class GameStateManager : MonoBehaviour
             playerPrefabs.RemoveAt(0);
             return playerPrefab;
         } else {
-            // TODO: does such a thing exist as optional in C# to wrap around GameObject for the return type?    
+            // TODO: does such a thing exist as optional in C# to wrap around GameObject for the return type?
             return null;
         }
     }
