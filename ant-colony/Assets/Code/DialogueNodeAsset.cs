@@ -13,8 +13,6 @@ public class DialogueNodeAsset : ScriptableObject
         Love,
     }
 
-    public DialogueType dialogueType;
-
     [TextArea(3, 5)]
     public string[] sentences;
 }

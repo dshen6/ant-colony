@@ -14,7 +14,7 @@ public class PlayerController : MonoBehaviour {
     float mFrameCounter;
     public float MovementSpeed = 5;
     Vector3 mVelocity = Vector3.zero;
-    Vector3 mFacingDirection = Vector3.right;
+    Vector3 mFacingDirection = Vector3.left;
     private CharacterController mCharController;
 
     private SpriteRenderer mPlayerSprite;
@@ -78,7 +78,7 @@ public class PlayerController : MonoBehaviour {
             }
             TransitionState(State.Moving);
         }
-        mPlayerSprite.flipX = mFacingDirection != Vector3.right;
+        mPlayerSprite.flipX = mFacingDirection != Vector3.left;
     }
 
     public void OnAButton() {
