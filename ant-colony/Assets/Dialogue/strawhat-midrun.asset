@@ -10,12 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c1dce29e6fd14a25b102399b5593b6f, type: 3}
-  m_Name: ten-gallon-bio
+  m_Name: strawhat-midrun
   m_EditorClassIdentifier: 
   commands: []
   sentences:
-  - 'Chuck L Whittaker:
-
-    The last of his family name, Chuck is just looking for a nice gal to settle down
-    with and start a family. He dreams of moving out west and starting an organic
-    farm.'
+  - Nearly there!
