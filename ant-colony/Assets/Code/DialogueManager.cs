@@ -16,7 +16,6 @@ public class DialogueManager : MonoBehaviour
     public Animator animator;
 
     public DialogueNodeAsset asset;
-    private CharacterController mCharController;
 
 
     void Awake() {
@@ -28,7 +27,6 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         sentenceQueue = new Queue<string>();
-        mCharController = PlayerController.Instance.mCharController;
     }
 
     // Update is called once per frame
@@ -43,8 +41,7 @@ public class DialogueManager : MonoBehaviour
         asset = speaker.GetDialogueNodeForType(DialogueType);
         Debug.Log("Starting conversation");
         // Debug.Log(String.Join(",", asset.sentences));
-        mCharController = PlayerController.Instance.gameObject.GetComponent<CharacterController>();
-        mCharController.enabled = false;
+        PlayerController.Instance.NotifyInDialogue(true);
         sentenceQueue.Clear();
 
         foreach (string sentence in asset.sentences)
@@ -83,8 +80,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-
-        mCharController.enabled = true;
+        PlayerController.Instance.NotifyInDialogue(false);
         CommandManager.Instance.addCommands(asset.commands);
         dialogueText.text = "";
 

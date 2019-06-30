@@ -15,13 +15,15 @@ public class PlayerController : MonoBehaviour {
     public float MovementSpeed = 5;
     Vector3 mVelocity = Vector3.zero;
     Vector3 mFacingDirection = Vector3.left;
-    public CharacterController mCharController;
+    private CharacterController mCharController;
 
     private SpriteRenderer mPlayerSprite;
 
     private State mCurrentState;
 
     private SpriteRenderer mLightSprite;
+
+    private bool mIsInDialog;
 
     public enum State
     {
@@ -83,6 +85,9 @@ public class PlayerController : MonoBehaviour {
 
 
     public void OnAxisInput(float horizontal, float vertical) {
+        if (mIsInDialog) {
+            return;
+        }
         mVelocity += new Vector3(MovementSpeed * horizontal, MovementSpeed * vertical, 0);
         if (Mathf.Abs(horizontal) > .1f || Mathf.Abs(vertical) > .1f) {
             if (Mathf.Abs(horizontal) > .1f) {
@@ -102,6 +107,10 @@ public class PlayerController : MonoBehaviour {
         var deathPosition = this.transform.position;
         Destroy(this.gameObject);
         GameStateManager.Instance.OnDeath(deathPosition);
+    }
+
+    public void NotifyInDialogue(bool inDialogue) {
+        mIsInDialog = inDialogue;
     }
 
     public void OnBButton() {
