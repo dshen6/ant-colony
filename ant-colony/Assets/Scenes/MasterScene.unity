@@ -1776,7 +1776,7 @@ MonoBehaviour:
   deadPlayerPrefab: {fileID: 3146535611083242953, guid: 32dba589d698b421cbe629b4a5f42cdd,
     type: 3}
   playerPrefabs:
-  - {fileID: 3146535611083242953, guid: d08d59879a4a84f95a1b568e339eb335, type: 3}
+  - {fileID: 8435283997212180728, guid: d83b406eb56ef4335856bc7339baadf7, type: 3}
   - {fileID: 2369176396928590699, guid: 572fafae674774d8f80213bc05f443a8, type: 3}
   - {fileID: 8435283997212180728, guid: 53dc05350a57347819a3fb0581fe6b67, type: 3}
   - {fileID: 8435283997212180728, guid: 3707a3fad4ce74effb085ef323578404, type: 3}
@@ -1786,7 +1786,6 @@ MonoBehaviour:
   - {fileID: 8435283997212180728, guid: 5b7170b6ef6df42c4a6ae1eb9e4e4e05, type: 3}
   - {fileID: 8435283997212180728, guid: bc41bbaa81a3f4c33868cba821fbe498, type: 3}
   - {fileID: 8435283997212180728, guid: 41838301307b74096ad412bdca08b6b7, type: 3}
-  - {fileID: 8435283997212180728, guid: d83b406eb56ef4335856bc7339baadf7, type: 3}
 --- !u!4 &586159155
 Transform:
   m_ObjectHideFlags: 0
