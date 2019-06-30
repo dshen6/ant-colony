@@ -16,7 +16,7 @@ public class TriggerCommandOnEnter : MonoBehaviour
 
         PlayerController player = other.gameObject.GetComponent<PlayerController>();;
         commands.ForEach(c => CommandManager.Instance.addCommand(c));
-        player.Die();
+        // player.Die();
     }
 
     public void OnDrawGizmos()

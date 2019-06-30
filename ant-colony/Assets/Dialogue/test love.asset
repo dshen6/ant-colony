@@ -10,7 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c1dce29e6fd14a25b102399b5593b6f, type: 3}
-  m_Name: hey dude
+  m_Name: test love
   m_EditorClassIdentifier: 
-  dialogueType: 0
-  sentences: []
+  dialogueType: 4
+  sentences:
+  - 'hey i''m in love dude '

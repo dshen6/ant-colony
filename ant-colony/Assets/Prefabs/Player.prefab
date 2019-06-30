@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2118182354648896699}
   - component: {fileID: 2118182354648896698}
   - component: {fileID: 2118182354648896696}
+  - component: {fileID: 5731630758948750590}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -130,3 +131,20 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5731630758948750590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2118182354648896695}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 640d316f3cf8245d8b2064f9d39680ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnDialogue: {fileID: 11400000, guid: 7c99666c53dbf4ce1a3b48337b106081, type: 2}
+  DieDialogue: {fileID: 11400000, guid: 9bc2b6c8f8ffb4aab9798e836fabeb37, type: 2}
+  MidrunDialogue: {fileID: 11400000, guid: eeca72f7d8a804668ab34cc339f34421, type: 2}
+  AtForkDialogue: {fileID: 11400000, guid: 726a6ee884f4d441887a1b4519335b6d, type: 2}
+  LoveDialogue: {fileID: 11400000, guid: eae58a27f1c204b0db79fe7c5a1551d4, type: 2}
