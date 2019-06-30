@@ -629,10 +629,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commands:
   - CommandType: 2
-    DialogType: 1
+    DialogueType: 0
     SceneName: 
   - CommandType: 4
-    DialogType: 0
+    DialogueType: 0
     SceneName: 
   isRepeatableTrigger: 1
 --- !u!65 &365190345
@@ -1754,7 +1754,7 @@ GameObject:
   - component: {fileID: 586159157}
   - component: {fileID: 586159156}
   m_Layer: 0
-  m_Name: SpawnTrigger
+  m_Name: Singleton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1776,11 +1776,11 @@ MonoBehaviour:
   deadPlayerPrefab: {fileID: 3146535611083242953, guid: 32dba589d698b421cbe629b4a5f42cdd,
     type: 3}
   playerPrefabs:
-  - {fileID: 3146535611083242953, guid: 6ba659d9b56704991bdea6df9d69a827, type: 3}
-  - {fileID: 3146535611083242953, guid: 6ba659d9b56704991bdea6df9d69a827, type: 3}
-  - {fileID: 3146535611083242953, guid: 6ba659d9b56704991bdea6df9d69a827, type: 3}
-  - {fileID: 3146535611083242953, guid: 6ba659d9b56704991bdea6df9d69a827, type: 3}
-  - {fileID: 3146535611083242953, guid: 6ba659d9b56704991bdea6df9d69a827, type: 3}
+  - {fileID: 3146535611083242953, guid: d08d59879a4a84f95a1b568e339eb335, type: 3}
+  - {fileID: 3146535611083242953, guid: d08d59879a4a84f95a1b568e339eb335, type: 3}
+  - {fileID: 3146535611083242953, guid: d08d59879a4a84f95a1b568e339eb335, type: 3}
+  - {fileID: 3146535611083242953, guid: d08d59879a4a84f95a1b568e339eb335, type: 3}
+  - {fileID: 3146535611083242953, guid: d08d59879a4a84f95a1b568e339eb335, type: 3}
 --- !u!4 &586159155
 Transform:
   m_ObjectHideFlags: 0
@@ -1809,6 +1809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueText: {fileID: 0}
   animator: {fileID: 0}
+  asset: {fileID: 0}
 --- !u!114 &586159157
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2599,10 +2600,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commands:
   - CommandType: 2
-    DialogType: 1
+    DialogueType: 0
     SceneName: 
   - CommandType: 4
-    DialogType: 0
+    DialogueType: 0
     SceneName: 
   isRepeatableTrigger: 1
 --- !u!65 &874774389
@@ -4473,7 +4474,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 2.56, y: 2.4}
+  m_Size: {x: 2.56, y: 0.26}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -5283,10 +5284,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commands:
   - CommandType: 2
-    DialogType: 1
+    DialogueType: 0
     SceneName: 
   - CommandType: 4
-    DialogType: 0
+    DialogueType: 0
     SceneName: 
   isRepeatableTrigger: 1
 --- !u!65 &1709705905
@@ -5462,10 +5463,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commands:
   - CommandType: 2
-    DialogType: 1
+    DialogueType: 0
     SceneName: 
   - CommandType: 4
-    DialogType: 0
+    DialogueType: 0
     SceneName: 
   isRepeatableTrigger: 1
 --- !u!212 &1767270880

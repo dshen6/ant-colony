@@ -21,6 +21,8 @@ public class PlayerController : MonoBehaviour {
 
     private State mCurrentState;
 
+    private SpriteRenderer mLightSprite;
+
     public enum State
     {
         Resting,
@@ -30,6 +32,17 @@ public class PlayerController : MonoBehaviour {
     void Awake() {
          mCharController = GetComponent<CharacterController>();
          mPlayerSprite = GetComponent<SpriteRenderer>();
+         SpriteRenderer[] lightSources = GetComponentsInChildren<SpriteRenderer>();
+         int selectedLightSource = (int) Random.Range(0.0f, 3.0f);
+         Debug.Log(lightSources.Length);
+         Debug.Log(selectedLightSource);
+         for (int i = 1; i < lightSources.Length; i++) {
+             if (i != selectedLightSource + 1) {
+                 lightSources[i].enabled = false;
+             }
+         }
+         mLightSprite = lightSources[selectedLightSource + 1];
+         mLightSprite.enabled = true;
         if (_instance != this)
         {
             _instance = this;
@@ -80,6 +93,7 @@ public class PlayerController : MonoBehaviour {
             TransitionState(State.Moving);
         }
         mPlayerSprite.flipX = mFacingDirection != Vector3.left;
+        mLightSprite.flipX = mFacingDirection != Vector3.left;
     }
 
     public void OnAButton() {
