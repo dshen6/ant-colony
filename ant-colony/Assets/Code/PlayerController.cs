@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour {
 
     private bool mIsInDialog;
 
+    public string Tag;
+
     public enum State
     {
         Resting,

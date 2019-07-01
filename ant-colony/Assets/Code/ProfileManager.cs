@@ -18,7 +18,7 @@ public class ProfileManager : MonoBehaviour
             _instance = this;
         }
     }
-    void ShowProfileForTag(string tag) {
+    public void ShowProfileForTag(string tag) {
         ProfilePic profileToShow = new ProfilePic();
         foreach(ProfilePic profile in Profiles) {
             if (profile.tag.Equals(tag)) {

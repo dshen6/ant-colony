@@ -12,6 +12,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: BeretVariant
       objectReference: {fileID: 0}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: -4497994697145305279, guid: 7cb19d3c06df2f54ca826c0cd6164e5a,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 5361452250520591954, guid: 7cb19d3c06df2f54ca826c0cd6164e5a,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 6693893217363728901, guid: 7cb19d3c06df2f54ca826c0cd6164e5a,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: -6463913383637796954, guid: 7cb19d3c06df2f54ca826c0cd6164e5a,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: Tag
+      value: beret
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146535611083242955, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a7613135c70084f029bee7c38368662e,
+        type: 3}
     - target: {fileID: 3146535611083242954, guid: d08d59879a4a84f95a1b568e339eb335,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -77,35 +112,5 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 3146535611083242955, guid: d08d59879a4a84f95a1b568e339eb335,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a7613135c70084f029bee7c38368662e,
-        type: 3}
-    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
-        type: 3}
-      propertyPath: MoveSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: -4497994697145305279, guid: 7cb19d3c06df2f54ca826c0cd6164e5a,
-        type: 3}
-    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
-        type: 3}
-      propertyPath: MoveSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 5361452250520591954, guid: 7cb19d3c06df2f54ca826c0cd6164e5a,
-        type: 3}
-    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
-        type: 3}
-      propertyPath: MoveSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 6693893217363728901, guid: 7cb19d3c06df2f54ca826c0cd6164e5a,
-        type: 3}
-    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
-        type: 3}
-      propertyPath: MoveSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: -6463913383637796954, guid: 7cb19d3c06df2f54ca826c0cd6164e5a,
-        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d08d59879a4a84f95a1b568e339eb335, type: 3}

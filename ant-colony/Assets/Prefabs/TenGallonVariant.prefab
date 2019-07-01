@@ -30,6 +30,51 @@ PrefabInstance:
       propertyPath: m_Name
       value: TenGallonVariant
       objectReference: {fileID: 0}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 1015076641371573315, guid: 5e71fc387cd06b34bb0b2d1db66a59e7,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 8431393583175832938, guid: 5e71fc387cd06b34bb0b2d1db66a59e7,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 1984222969622871470, guid: 5e71fc387cd06b34bb0b2d1db66a59e7,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: -2532419056346020875, guid: 5e71fc387cd06b34bb0b2d1db66a59e7,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveFramerate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: RestFramerate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: Tag
+      value: tengallon
+      objectReference: {fileID: 0}
+    - target: {fileID: 3146535611083242955, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e1cd2142e48a54230aca982c7847199a,
+        type: 3}
     - target: {fileID: 3146535611083242954, guid: d08d59879a4a84f95a1b568e339eb335,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -93,46 +138,6 @@ PrefabInstance:
     - target: {fileID: 3146535611083242954, guid: d08d59879a4a84f95a1b568e339eb335,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3146535611083242955, guid: d08d59879a4a84f95a1b568e339eb335,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: e1cd2142e48a54230aca982c7847199a,
-        type: 3}
-    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
-        type: 3}
-      propertyPath: MoveSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 1015076641371573315, guid: 5e71fc387cd06b34bb0b2d1db66a59e7,
-        type: 3}
-    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
-        type: 3}
-      propertyPath: MoveSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 8431393583175832938, guid: 5e71fc387cd06b34bb0b2d1db66a59e7,
-        type: 3}
-    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
-        type: 3}
-      propertyPath: MoveSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 1984222969622871470, guid: 5e71fc387cd06b34bb0b2d1db66a59e7,
-        type: 3}
-    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
-        type: 3}
-      propertyPath: MoveSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: -2532419056346020875, guid: 5e71fc387cd06b34bb0b2d1db66a59e7,
-        type: 3}
-    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
-        type: 3}
-      propertyPath: MoveFramerate
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
-        type: 3}
-      propertyPath: RestFramerate
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

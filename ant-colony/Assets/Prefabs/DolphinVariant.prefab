@@ -54,6 +54,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -7535446106677024946, guid: 37e2d0a50d1f7e84fa59c1a3ebf6a735,
         type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: Tag
+      value: dolphin
+      objectReference: {fileID: 0}
     - target: {fileID: 3146535611083242955, guid: d08d59879a4a84f95a1b568e339eb335,
         type: 3}
       propertyPath: m_Sprite

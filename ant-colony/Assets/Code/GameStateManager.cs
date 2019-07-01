@@ -44,6 +44,8 @@ public class GameStateManager : MonoBehaviour
         var nextPlayer = this.getNextPlayer();
         if (nextPlayer != null) {
             Instantiate(nextPlayer, initialPlayerPosition, Quaternion.identity);
+            var tag = nextPlayer.GetComponent<PlayerController>().Tag;
+            ProfileManager.Instance.ShowProfileForTag(tag);
         } else {
             // TODO: GAME OVER
             Debug.Log("GAME OVER");
