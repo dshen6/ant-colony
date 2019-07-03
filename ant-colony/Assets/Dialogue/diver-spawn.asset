@@ -10,14 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c1dce29e6fd14a25b102399b5593b6f, type: 3}
-  m_Name: test die
+  m_Name: diver-spawn
   m_EditorClassIdentifier: 
-  commands:
-  - CommandType: 2
-    DialogueType: 1
-    SceneName: 
-  - CommandType: 4
-    DialogueType: 0
-    SceneName: 
+  commands: []
   sentences:
-  - hey i died dude
+  - '*muffled grunts*'

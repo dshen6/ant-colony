@@ -1,5 +1,23 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &3303296760671606309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2369176396928590699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 640d316f3cf8245d8b2064f9d39680ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BioDialogue: {fileID: 11400000, guid: 049f5cdb2294d7a4cb12288f56c935d6, type: 2}
+  SpawnDialogue: {fileID: 11400000, guid: 993ab919d1904d244a218e891bc77cbe, type: 2}
+  MidrunDialogue: {fileID: 11400000, guid: 31e72794a4d326941a4a6dd3e2cfdfee, type: 2}
+  AtForkDialogue: {fileID: 11400000, guid: 9ff56a94669d6c448b688dc492f8a4e0, type: 2}
+  DieDialogue: {fileID: 11400000, guid: d94ef922577f9bc4fae83ece131c4fb2, type: 2}
+  LoveDialogue: {fileID: 0}
 --- !u!1001 &813950964482481826
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -105,3 +123,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d08d59879a4a84f95a1b568e339eb335, type: 3}
+--- !u!1 &2369176396928590699 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3146535611083242953, guid: d08d59879a4a84f95a1b568e339eb335,
+    type: 3}
+  m_PrefabInstance: {fileID: 813950964482481826}
+  m_PrefabAsset: {fileID: 0}

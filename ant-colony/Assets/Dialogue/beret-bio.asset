@@ -10,8 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c1dce29e6fd14a25b102399b5593b6f, type: 3}
-  m_Name: fez-at-fork
+  m_Name: beret-bio
   m_EditorClassIdentifier: 
   commands: []
   sentences:
-  - "Ahh, stick a fork in it...\r\n"
+  - 'Jean-Pierre Francois:
+
+    Renowned artist, Jean-Pierre is known for his unrelenting pursuit of inspiration.
+    This is just another foray in pursuit of true art.'
