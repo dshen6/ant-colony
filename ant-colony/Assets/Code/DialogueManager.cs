@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 
 public class DialogueManager : MonoBehaviour
@@ -11,16 +12,14 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager Instance { get { return _instance; } }
 
     public Queue<string> sentenceQueue;
-    public Text dialogueText;
-
-    public Animator animator;
-
+    public TextMeshProUGUI dialogueText;
     public DialogueNodeAsset asset;
 
     void Awake() {
          if (_instance == null){
             _instance = this;
         }
+        dialogueText = FindObjectOfType<TextMeshProUGUI>();
     }
     // Start is called before the first frame update
     void Start()
