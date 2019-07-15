@@ -1,6 +1,5 @@
 using UnityEngine;
 using System.Collections;
-
 public class PlayerController : MonoBehaviour {
 
     private static PlayerController _instance;
@@ -102,6 +101,10 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void OnAButton() {
+        if (GameStateManager.Instance.canRestart) {
+            GameStateManager.Instance.Restart();
+            return;
+        }
         DialogueManager.Instance.DisplayNextSentence();
     }
 

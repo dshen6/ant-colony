@@ -172,8 +172,6 @@ GameObject:
   - component: {fileID: 3146535611083242949}
   - component: {fileID: 3146535611083242948}
   - component: {fileID: 3146535611083242950}
-  - component: {fileID: 8863534453896985163}
-  - component: {fileID: 6918277780974663270}
   m_Layer: 0
   m_Name: MasterBasePlayer
   m_TagString: Untagged
@@ -261,16 +259,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e7ead8791524811a7c7d455d8e9e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VELOCITY_DECAY: 0.9
+  VELOCITY_DECAY: 0.95
   RestSprites: []
   MoveSprites:
   - {fileID: 4300834226239213730, guid: 04d34afcaf6ccec4ab24f5ca163d5d2b, type: 3}
   - {fileID: 8195604265828211777, guid: 04d34afcaf6ccec4ab24f5ca163d5d2b, type: 3}
   - {fileID: 7953422645195571511, guid: 04d34afcaf6ccec4ab24f5ca163d5d2b, type: 3}
   - {fileID: 2373361536870538569, guid: 04d34afcaf6ccec4ab24f5ca163d5d2b, type: 3}
-  MoveFramerate: 3
+  MoveFramerate: 2
   RestFramerate: 3
-  MovementSpeed: 0.5
+  MovementSpeed: 0.3
+  Tag: 
 --- !u!114 &3146535611083242948
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,40 +300,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: -0.06, z: 0}
---- !u!111 &8863534453896985163
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3146535611083242953}
-  m_Enabled: 0
-  serializedVersion: 3
-  m_Animation: {fileID: 0}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
---- !u!95 &6918277780974663270
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3146535611083242953}
-  m_Enabled: 0
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3315324040308814851
 GameObject:
   m_ObjectHideFlags: 0

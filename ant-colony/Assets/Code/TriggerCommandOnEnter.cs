@@ -18,7 +18,7 @@ public class TriggerCommandOnEnter : MonoBehaviour
             return;
         }
         mostRecentTrigger = other.gameObject;
-        CommandManager.Instance.addCommands(commands);
+        CommandManager.Instance.addCommands(commands, transform.position);
         hasTriggered = true;
     }
 

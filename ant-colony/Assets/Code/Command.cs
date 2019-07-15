@@ -10,19 +10,10 @@ public struct Command
         Move,
         StartDialogue, // DialogueType
         Die,
-        LoadScene,
         Spawn,
-        Win
+        Win,
+        StartEnemyAnimation
     }
     public Type CommandType;
     public DialogueNodeAsset.DialogueType DialogueType;
-    public string SceneName;
-
-    // public static Command StartDialogCommand(DialogueNodeAsset dialogueNodeAsset)
-    // {
-    //     Command showDialogCommand = new Command();
-    //     showDialogCommand.CommandType = Command.Type.StartDialogue;
-    //     showDialogCommand.DialogueNodeAsset = dialogueNodeAsset;
-    //     return showDialogCommand;
-    // }
 }

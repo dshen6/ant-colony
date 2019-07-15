@@ -17,14 +17,14 @@ using UnityEngine;
         }
     }
 
-    public void addCommands(List<Command> commands) {
+    public void addCommands(List<Command> commands, Vector3? TriggerPosition) {
         foreach (Command command in commands)
         {
-            addCommand(command);
+            addCommand(command, TriggerPosition.HasValue ? (Vector3)TriggerPosition : Vector3.zero);
         };
     }
 
-    public void addCommand(Command command) {
+    public void addCommand(Command command, Vector3 TriggerPosition) {
         switch (command.CommandType)
         {
             case Command.Type.StartDialogue: 
@@ -35,6 +35,12 @@ using UnityEngine;
                 break;
             case Command.Type.Die:
                 PlayerController.Instance.Die();
+                break;
+            case Command.Type.Win:
+                GameStateManager.Instance.Win();
+                break;
+            case Command.Type.StartEnemyAnimation:
+                EnemyAnimatorManager.Instance.Play(TriggerPosition);
                 break;
             default:
                 throw new System.Exception("Unimplemented command " + command);

@@ -12,8 +12,8 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager Instance { get { return _instance; } }
 
     public Queue<string> sentenceQueue;
-    public TextMeshProUGUI dialogueText;
-    public DialogueNodeAsset asset;
+    TextMeshProUGUI dialogueText;
+    DialogueNodeAsset asset;
 
     void Awake() {
          if (_instance == null){
@@ -75,7 +75,7 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         PlayerController.Instance.NotifyInDialogue(false);
-        CommandManager.Instance.addCommands(asset.commands);
+        CommandManager.Instance.addCommands(asset.commands, null);
         dialogueText.text = "";
     }
 
