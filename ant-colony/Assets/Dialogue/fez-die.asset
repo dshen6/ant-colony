@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c1dce29e6fd14a25b102399b5593b6f, type: 3}
   m_Name: fez-die
   m_EditorClassIdentifier: 
-  commands: []
+  commands:
+  - CommandType: 3
+    DialogueType: 0
   sentences:
   - This life was not falawful at all.

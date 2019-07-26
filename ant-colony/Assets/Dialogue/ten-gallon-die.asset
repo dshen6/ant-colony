@@ -12,5 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c1dce29e6fd14a25b102399b5593b6f, type: 3}
   m_Name: ten-gallon-die
   m_EditorClassIdentifier: 
+  commands:
+  - CommandType: 3
+    DialogueType: 0
   sentences:
   - nonononononoshitshitFUCKTHIS------CHUCK L WITTAKER DOES NOT GO OUT LIKE THIS

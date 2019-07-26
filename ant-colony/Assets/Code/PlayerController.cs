@@ -118,22 +118,6 @@ public class PlayerController : MonoBehaviour {
         mIsInDialog = inDialogue;
     }
 
-    public void OnBButton() {
-    }
-
-    public void OnTriggerEnter(Collider other) {
-        // MonoBehaviour[] list = other.gameObject.GetComponents<MonoBehaviour>();
-        // foreach(MonoBehaviour mb in list)
-        // {
-        // }
-    }
-
-    public void OnTriggerExit(Collider other) {
-        // MonoBehaviour[] list = other.gameObject.GetComponents<MonoBehaviour>();
-        // foreach(MonoBehaviour mb in list)
-        // {
-        // }
-    }
     void TransitionState(State state)
     {
         mCurrentState = state;
