@@ -2285,7 +2285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialPlayerPosition: {x: 0.69, y: -8.5, z: 0}
-  deadPlayerPrefab: {fileID: 3146535611083242953, guid: 32dba589d698b421cbe629b4a5f42cdd,
+  deadPlayerPrefab: {fileID: 6242382005394456179, guid: 33f7e7b0c9abe4740ab1fd9f6e7695d6,
     type: 3}
   playerPrefabs:
   - {fileID: 8435283997212180728, guid: d83b406eb56ef4335856bc7339baadf7, type: 3}
@@ -5006,8 +5006,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1169734523}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.34, y: -10.6, z: -8}
-  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
+  m_LocalPosition: {x: -11.4, y: -10.74, z: -8}
+  m_LocalScale: {x: 1.6, y: 1.6, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
@@ -5467,9 +5467,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309605272}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -10.61, z: -7.34}
-  m_LocalScale: {x: 10, y: 10, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -10.74, z: 0}
+  m_LocalScale: {x: 1.6, y: 1.6, z: 1}
   m_Children: []
   m_Father: {fileID: 1811951362}
   m_RootOrder: 98
