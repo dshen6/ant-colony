@@ -18,7 +18,6 @@ public class LightTrailController : MonoBehaviour {
 
     public void TrackObject(GameObject target) {
         currentTrail = Instantiate(lightTrailPrefab, target.transform.position, Quaternion.identity);
-        currentTrail.GetComponent<ParticleSystem>().Play();
         Target = target;
     }
 

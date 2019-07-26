@@ -35,6 +35,30 @@ PrefabInstance:
       propertyPath: Tag
       value: astronaut
       objectReference: {fileID: 0}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 4300834226239213730, guid: 04d34afcaf6ccec4ab24f5ca163d5d2b,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 8195604265828211777, guid: 04d34afcaf6ccec4ab24f5ca163d5d2b,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 7953422645195571511, guid: 04d34afcaf6ccec4ab24f5ca163d5d2b,
+        type: 3}
+    - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
+        type: 3}
+      propertyPath: MoveSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 2373361536870538569, guid: 04d34afcaf6ccec4ab24f5ca163d5d2b,
+        type: 3}
     - target: {fileID: 3146535611083242955, guid: d08d59879a4a84f95a1b568e339eb335,
         type: 3}
       propertyPath: m_Sprite
