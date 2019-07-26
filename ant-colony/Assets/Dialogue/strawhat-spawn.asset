@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commands: []
   sentences:
-  - "Oh dear, these hips don\u2019t work the same way they used to!"
+  - Oh dear, these hips don't work the same way they used to!
   - '(knock knock) Wake up! '

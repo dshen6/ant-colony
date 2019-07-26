@@ -14,5 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commands: []
   sentences:
-  - "I haven't seen anything run like this since Papa Fakir\u2019s tahini sauce of
-    '84."
+  - I haven't seen anything run like this since Papa Fakir's tahini sauce of '84.

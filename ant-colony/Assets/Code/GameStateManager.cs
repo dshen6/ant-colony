@@ -72,14 +72,16 @@ public class GameStateManager : MonoBehaviour
     public void OnDeath(Vector3 deathPosition){
         Instantiate(deadPlayerPrefab, deathPosition, Quaternion.identity);
         HeartManager.Instance.LoseHealth();
+        SpawnPlayer();
     }
 
     public void SpawnPlayer() {
         var nextPlayer = this.getNextPlayer();
         if (nextPlayer != null) {
-            Instantiate(nextPlayer, initialPlayerPosition, Quaternion.identity);
+            GameObject newPlayer = Instantiate(nextPlayer, initialPlayerPosition, Quaternion.identity);
             var tag = nextPlayer.GetComponent<PlayerController>().Tag;
             ProfileManager.Instance.ShowProfileForTag(tag);
+            LightTrailController.Instance.TrackObject(newPlayer);
         } else {
             canRestart = true;
         }
