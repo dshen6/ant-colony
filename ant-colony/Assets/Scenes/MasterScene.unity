@@ -1793,7 +1793,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 514032366}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 9
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2265,6 +2265,7 @@ GameObject:
   - component: {fileID: 586159154}
   - component: {fileID: 586159157}
   - component: {fileID: 586159156}
+  - component: {fileID: 586159158}
   m_Layer: 0
   m_Name: Singletons
   m_TagString: Untagged
@@ -2340,6 +2341,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bffe907f9c463465f8fe82935e7438f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &586159158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586159153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ba3adb0e9f05724887d6de01def8d6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &588500871
