@@ -78,15 +78,13 @@ public class PlayerController : MonoBehaviour {
         }
 
     }
-
     void FixedUpdate()
     {
         mVelocity *= VELOCITY_DECAY;
     }
 
-
     public void OnAxisInput(float horizontal, float vertical) {
-        if (mIsInDialog) {
+        if (mIsInDialog || gameObject == null) {
             return;
         }
         mVelocity += new Vector3(MovementSpeed * horizontal, MovementSpeed * vertical, 0);
@@ -98,14 +96,6 @@ public class PlayerController : MonoBehaviour {
         }
         mPlayerSprite.flipX = mFacingDirection != Vector3.left;
         mLightSprite.flipX = mFacingDirection != Vector3.left;
-    }
-
-    public void OnAButton() {
-        if (GameStateManager.Instance.canRestart) {
-            GameStateManager.Instance.Restart();
-            return;
-        }
-        DialogueManager.Instance.DisplayNextSentence();
     }
 
     public void Die() {

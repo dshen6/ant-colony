@@ -170,7 +170,6 @@ GameObject:
   - component: {fileID: 3146535611083242954}
   - component: {fileID: 3146535611083242955}
   - component: {fileID: 3146535611083242949}
-  - component: {fileID: 3146535611083242948}
   - component: {fileID: 3146535611083242950}
   m_Layer: 0
   m_Name: MasterBasePlayer
@@ -269,18 +268,6 @@ MonoBehaviour:
   RestFramerate: 3
   MovementSpeed: 0.35
   Tag: 
---- !u!114 &3146535611083242948
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3146535611083242953}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18020ada9e48f4d86b5429b8810ef817, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!143 &3146535611083242950
 CharacterController:
   m_ObjectHideFlags: 0
