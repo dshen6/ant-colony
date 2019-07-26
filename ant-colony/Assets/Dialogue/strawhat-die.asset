@@ -14,4 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commands: []
   sentences:
-  - "Well, at least these hips won\u2019t be giving me pain anymore!\n"
+  - 'Well, at least these hips won''t be giving me pain anymore!
+
+'

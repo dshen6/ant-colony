@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c1dce29e6fd14a25b102399b5593b6f, type: 3}
   m_Name: ten-gallon-spawn
   m_EditorClassIdentifier: 
+  commands: []
   sentences:
   - (aite chucky, it's work time - let's get it)
-  - (quick round of antenna-ups)
+  - (quick round of antenna push-ups)
   - 1.....hff
   - 2.....ungg
   - 3.....uGHH

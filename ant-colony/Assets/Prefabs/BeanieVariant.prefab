@@ -15,7 +15,7 @@ MonoBehaviour:
   BioDialogue: {fileID: 11400000, guid: 4a464d3d9775be242a61b933fc5cb2ba, type: 2}
   SpawnDialogue: {fileID: 11400000, guid: 13483e4a09a66e24c8d5e5c1acdd3438, type: 2}
   MidrunDialogue: {fileID: 11400000, guid: b9221594624e5e84d80d1e9363ef5b3b, type: 2}
-  AtForkDialogue: {fileID: 11400000, guid: d951d03d52a309f49899d7a80481416e, type: 2}
+  AtForkDialogue: {fileID: 11400000, guid: 0e6a1d15d2c56274b949dc90103d1e37, type: 2}
   DieDialogue: {fileID: 11400000, guid: 4a464d3d9775be242a61b933fc5cb2ba, type: 2}
   LoveDialogue: {fileID: 0}
 --- !u!1001 &6825939081493822769
