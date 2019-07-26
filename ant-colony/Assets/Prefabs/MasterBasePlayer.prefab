@@ -259,16 +259,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e7ead8791524811a7c7d455d8e9e71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  VELOCITY_DECAY: 0.95
+  VELOCITY_DECAY: 0.8
   RestSprites: []
   MoveSprites:
-  - {fileID: 4300834226239213730, guid: 04d34afcaf6ccec4ab24f5ca163d5d2b, type: 3}
-  - {fileID: 8195604265828211777, guid: 04d34afcaf6ccec4ab24f5ca163d5d2b, type: 3}
-  - {fileID: 7953422645195571511, guid: 04d34afcaf6ccec4ab24f5ca163d5d2b, type: 3}
-  - {fileID: 2373361536870538569, guid: 04d34afcaf6ccec4ab24f5ca163d5d2b, type: 3}
-  MoveFramerate: 2
+  - {fileID: -4471319647498590330, guid: 2d0bad1a6d495f347b681e6f30a3e472, type: 3}
+  - {fileID: -6803830816701626283, guid: 2d0bad1a6d495f347b681e6f30a3e472, type: 3}
+  - {fileID: 3406388073366779011, guid: 2d0bad1a6d495f347b681e6f30a3e472, type: 3}
+  - {fileID: 1782408047169422576, guid: 2d0bad1a6d495f347b681e6f30a3e472, type: 3}
+  MoveFramerate: 1
   RestFramerate: 3
-  MovementSpeed: 0.3
+  MovementSpeed: 0.35
   Tag: 
 --- !u!114 &3146535611083242948
 MonoBehaviour:

@@ -62,7 +62,7 @@ PrefabInstance:
     - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
         type: 3}
       propertyPath: RestFramerate
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3146535611083242949, guid: d08d59879a4a84f95a1b568e339eb335,
         type: 3}
