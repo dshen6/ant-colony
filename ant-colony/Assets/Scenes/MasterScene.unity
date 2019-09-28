@@ -7284,8 +7284,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1767270881}
   - component: {fileID: 1767270880}
-  - component: {fileID: 1767270879}
   - component: {fileID: 1767270882}
+  - component: {fileID: 1767270879}
   m_Layer: 0
   m_Name: simple_enemy_hole_1
   m_TagString: Untagged
