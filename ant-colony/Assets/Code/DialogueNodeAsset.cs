@@ -14,6 +14,7 @@ public class DialogueNodeAsset : ScriptableObject
         Bio,
     }
 
+    // List of commands executed after this node is finished
     public List<Command> commands;
 
     [TextArea(3, 5)]

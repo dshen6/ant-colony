@@ -11,12 +11,18 @@ public class ProfileManager : MonoBehaviour
 
     public List<ProfilePic> Profiles;
 
+    public ArrayAnimatorScript SpeakingAnimation;
+
     [System.Serializable]
    public struct ProfilePic { public string tag; public Sprite[] sprites; }
     void Awake() {
         if (_instance == null){
             _instance = this;
         }
+    }
+
+    void Start() {
+        SpeakingAnimation = GetComponent<ArrayAnimatorScript>();
     }
     public void ShowProfileForTag(string tag) {
         ProfilePic profileToShow = new ProfilePic();
@@ -28,4 +34,13 @@ public class ProfileManager : MonoBehaviour
         GetComponent<ArrayAnimatorScript>().AnimationArray = profileToShow.sprites;
         GetComponent<ArrayAnimatorScript>().Play();
     }
+
+    void Update() {
+        if (DialogueManager.Instance.IsCurrentlyInDialogue) {
+            SpeakingAnimation.Play();
+        } else {
+            SpeakingAnimation.StopAllCoroutines();
+        }
+    }
+    
 }

@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void OnAxisInput(float horizontal, float vertical) {
-        if (mIsInDialog || gameObject == null) {
+        if (DialogueManager.Instance.IsCurrentlyInDialogue || gameObject == null) {
             return;
         }
         mVelocity += new Vector3(MovementSpeed * horizontal, MovementSpeed * vertical, 0);
@@ -102,10 +102,6 @@ public class PlayerController : MonoBehaviour {
         var deathPosition = this.transform.position;
         Destroy(this.gameObject);
         GameStateManager.Instance.OnDeath(deathPosition);
-    }
-
-    public void NotifyInDialogue(bool inDialogue) {
-        mIsInDialog = inDialogue;
     }
 
     void TransitionState(State state)

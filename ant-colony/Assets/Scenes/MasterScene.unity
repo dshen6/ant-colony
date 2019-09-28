@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731196, g: 0.38074002, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1091,7 +1091,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279e6b46bea6d49f5a13600fe04e4ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commands: []
+  commands:
+  - CommandType: 2
+    DialogueType: 0
+  - CommandType: 1
+    DialogueType: 1
+  - CommandType: 5
+    DialogueType: 1
   isRepeatableTrigger: 1
 --- !u!212 &371809333
 SpriteRenderer:
@@ -1568,7 +1574,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279e6b46bea6d49f5a13600fe04e4ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commands: []
+  commands:
+  - CommandType: 2
+    DialogueType: 0
+  - CommandType: 1
+    DialogueType: 1
+  - CommandType: 5
+    DialogueType: 1
   isRepeatableTrigger: 1
 --- !u!212 &463447325
 SpriteRenderer:
@@ -3465,8 +3477,10 @@ MonoBehaviour:
   commands:
   - CommandType: 2
     DialogueType: 0
-  - CommandType: 4
-    DialogueType: 0
+  - CommandType: 1
+    DialogueType: 1
+  - CommandType: 5
+    DialogueType: 1
   isRepeatableTrigger: 1
 --- !u!65 &874774389
 BoxCollider:
@@ -4957,10 +4971,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e496e92ab47b44ab0b6748a5371bcbfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationWait: 0
+  animationWait: 0.2
   AnimationArray: []
-  playOnStart: 0
-  repeatForever: 0
+  playOnStart: 1
+  repeatForever: 1
   removeOnFinish: 0
   startDelayMs: 0
 --- !u!212 &1169734526
@@ -5466,7 +5480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1309605273}
   - component: {fileID: 1309605274}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: intro_maze_base_dialogue (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5481,7 +5495,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1309605272}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -10.74, z: 0}
+  m_LocalPosition: {x: 0, y: -10.74, z: -5.07}
   m_LocalScale: {x: 1.6, y: 1.6, z: 1}
   m_Children: []
   m_Father: {fileID: 1811951362}
@@ -6584,7 +6598,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 279e6b46bea6d49f5a13600fe04e4ae6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  commands: []
+  commands:
+  - CommandType: 2
+    DialogueType: 0
+  - CommandType: 1
+    DialogueType: 1
+  - CommandType: 5
+    DialogueType: 1
   isRepeatableTrigger: 1
 --- !u!212 &1636425282
 SpriteRenderer:
@@ -7041,7 +7061,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1709516699}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.24505424, y: -2.447679, z: -0.22978398}
+  m_LocalPosition: {x: 0.24505424, y: -2.78, z: -0.22978398}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 296770791}

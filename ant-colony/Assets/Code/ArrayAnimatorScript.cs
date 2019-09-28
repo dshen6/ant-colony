@@ -15,6 +15,8 @@ public class ArrayAnimatorScript : MonoBehaviour
     public bool removeOnFinish = false;
     public float startDelayMs = 0f;
 
+    private bool isAnimating;
+
     private void Awake()
     {
         spriteComponent = GetComponent<SpriteRenderer>();
@@ -27,11 +29,15 @@ public class ArrayAnimatorScript : MonoBehaviour
     }
 
     public void Play() {
+        if (isAnimating) {
+            return;
+        }
         StartCoroutine(Animate());
     }
 
     public IEnumerator Animate()
     {
+        isAnimating = true;
         if (startDelayMs > 0) {
             yield return new WaitForSeconds(startDelayMs/1000f);
         }
@@ -45,5 +51,6 @@ public class ArrayAnimatorScript : MonoBehaviour
         if (removeOnFinish) {
             spriteComponent.sprite = null;
         }
+        isAnimating = false;
     }
 }

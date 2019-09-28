@@ -12,6 +12,8 @@ public class DialogueManager : MonoBehaviour
     public static DialogueManager Instance { get { return _instance; } }
 
     public Queue<string> sentenceQueue;
+
+    public bool IsCurrentlyInDialogue { get; private set; }
     TextMeshProUGUI dialogueText;
     DialogueNodeAsset asset;
 
@@ -37,7 +39,7 @@ public class DialogueManager : MonoBehaviour
     {
         Speaker speaker = PlayerController.Instance.gameObject.GetComponent<Speaker>();
         asset = speaker.GetDialogueNodeForType(DialogueType);
-        PlayerController.Instance.NotifyInDialogue(true);
+        IsCurrentlyInDialogue = true;
         sentenceQueue.Clear();
 
         foreach (string sentence in asset.sentences)
@@ -74,7 +76,7 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        PlayerController.Instance.NotifyInDialogue(false);
+        IsCurrentlyInDialogue = false;
         CommandManager.Instance.addCommands(asset.commands, null);
         dialogueText.text = "";
     }
