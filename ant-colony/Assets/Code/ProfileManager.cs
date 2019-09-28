@@ -22,7 +22,6 @@ public class ProfileManager : MonoBehaviour
     }
 
     void Start() {
-        SpeakingAnimation = GetComponent<ArrayAnimatorScript>();
     }
     public void ShowProfileForTag(string tag) {
         ProfilePic profileToShow = new ProfilePic();
@@ -31,15 +30,17 @@ public class ProfileManager : MonoBehaviour
                 profileToShow = profile;
             }
         }
+        GetComponent<ArrayAnimatorScript>().StopAllCoroutines();
+        GetComponent<SpriteRenderer>().sprite = profileToShow.sprites[0];
         GetComponent<ArrayAnimatorScript>().AnimationArray = profileToShow.sprites;
         GetComponent<ArrayAnimatorScript>().Play();
     }
 
     void Update() {
-        if (DialogueManager.Instance.IsCurrentlyInDialogue) {
-            SpeakingAnimation.Play();
+        if (DialogueManager.Instance != null && DialogueManager.Instance.IsCurrentlyInDialogue) {
+            GetComponent<ArrayAnimatorScript>().Play();
         } else {
-            SpeakingAnimation.StopAllCoroutines();
+            GetComponent<ArrayAnimatorScript>().StopAllCoroutines();
         }
     }
     

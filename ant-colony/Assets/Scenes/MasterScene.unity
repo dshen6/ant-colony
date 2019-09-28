@@ -8171,7 +8171,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commands:
   - CommandType: 1
-    DialogueType: 0
+    DialogueType: 5
   isRepeatableTrigger: 1
 --- !u!65 &2000425725
 BoxCollider:

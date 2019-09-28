@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c1dce29e6fd14a25b102399b5593b6f, type: 3}
   m_Name: strawhat-bio
   m_EditorClassIdentifier: 
-  commands: []
+  commands:
+  - CommandType: 1
+    DialogueType: 0
   sentences:
   - 'Dorothy Plotts: Dorothy is retired and pursuing her lifelong passion, landscape
     design. She''s only a seasonal worker trying to earn some extra money for her

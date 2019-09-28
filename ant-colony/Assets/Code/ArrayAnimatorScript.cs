@@ -37,10 +37,10 @@ public class ArrayAnimatorScript : MonoBehaviour
 
     public IEnumerator Animate()
     {
-        isAnimating = true;
         if (startDelayMs > 0) {
             yield return new WaitForSeconds(startDelayMs/1000f);
         }
+        isAnimating = true;
         do {
             foreach (Sprite sprite in AnimationArray)
             {

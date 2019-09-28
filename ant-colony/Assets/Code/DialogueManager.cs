@@ -29,17 +29,14 @@ public class DialogueManager : MonoBehaviour
         sentenceQueue = new Queue<string>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void StartDialogue(DialogueNodeAsset.DialogueType DialogueType)
     {
         Speaker speaker = PlayerController.Instance.gameObject.GetComponent<Speaker>();
         asset = speaker.GetDialogueNodeForType(DialogueType);
-        IsCurrentlyInDialogue = true;
+        AdjustTextSizeForDialogueType(DialogueType);
+        if (DialogueType != DialogueNodeAsset.DialogueType.Bio) {
+            IsCurrentlyInDialogue = true;
+        }
         sentenceQueue.Clear();
 
         foreach (string sentence in asset.sentences)
@@ -73,12 +70,20 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    private void AdjustTextSizeForDialogueType(DialogueNodeAsset.DialogueType DialogueType) {
+        if (DialogueType == DialogueNodeAsset.DialogueType.Bio) {
+            dialogueText.fontSize = 24;
+        } else {
+            dialogueText.fontSize = 32;
+        }
+    }
+
 
     public void EndDialogue()
     {
         IsCurrentlyInDialogue = false;
-        CommandManager.Instance.addCommands(asset.commands, null);
         dialogueText.text = "";
+        CommandManager.Instance.addCommands(asset.commands, null);
     }
 
 }

@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c1dce29e6fd14a25b102399b5593b6f, type: 3}
   m_Name: beret-bio
   m_EditorClassIdentifier: 
-  commands: []
+  commands:
+  - CommandType: 1
+    DialogueType: 0
   sentences:
   - 'Jean-Pierre Francois: Renowned artist, Jean-Pierre is known for his unrelenting
     pursuit of inspiration. This is just another foray in pursuit of true art.'

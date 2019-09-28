@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c1dce29e6fd14a25b102399b5593b6f, type: 3}
   m_Name: diver-bio
   m_EditorClassIdentifier: 
-  commands: []
+  commands:
+  - CommandType: 1
+    DialogueType: 0
   sentences:
   - 'Aleksander Mikhailov: A fairly inexperienced diver, Aleksander is still looking
     for the ocean. Does that helmet even work?'

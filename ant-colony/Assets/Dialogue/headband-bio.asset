@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c1dce29e6fd14a25b102399b5593b6f, type: 3}
   m_Name: headband-bio
   m_EditorClassIdentifier: 
-  commands: []
+  commands:
+  - CommandType: 1
+    DialogueType: 0
   sentences:
   - "Dominique Velasquez: Muay Thai, Judo, Taekwondo, ka-RA-teh\u2026 Dominique has
     mastered them all. The number one mixed martial arts champion of the world is
