@@ -14,10 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commands: []
   sentences:
-  - 'Dorothy Plotts:
-
-    Dorothy is retired and pursuing her lifelong passion, landscape design. She''s
-    only a seasonal worker trying to earn some extra money for her grandchild Alice''s
-    birthday present!
-
-'
+  - 'Dorothy Plotts: Dorothy is retired and pursuing her lifelong passion, landscape
+    design. She''s only a seasonal worker trying to earn some extra money for her
+    grandchild Alice''s birthday present!'

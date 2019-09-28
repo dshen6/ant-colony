@@ -14,7 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commands: []
   sentences:
-  - 'Aleksander Mikhailov:
-
-    A fairly inexperienced diver, Aleksander is still looking for the ocean. Does
-    that helmet even work?'
+  - 'Aleksander Mikhailov: A fairly inexperienced diver, Aleksander is still looking
+    for the ocean. Does that helmet even work?'

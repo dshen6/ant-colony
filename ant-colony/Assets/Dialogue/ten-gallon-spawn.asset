@@ -14,10 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commands: []
   sentences:
-  - (aite chucky, it's work time - let's get it)
-  - (quick round of antenna push-ups)
-  - 1.....hff
-  - 2.....ungg
-  - 3.....uGHH
-  - 4.....yahhhHHHHSSSS
-  - LETS GOOOOOOOOOOO
+  - '(aite chucky, it''s work time)
+
+    LETS GOOOOOOOOOOO'

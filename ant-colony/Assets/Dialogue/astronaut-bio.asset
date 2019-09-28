@@ -14,7 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commands: []
   sentences:
-  - 'Kimi Yoshida:
-
-    The first of her family to get a degree, and she studied rocket science! Kimi
-    is training for an upcoming mission to Mars.'
+  - 'Kimi Yoshida: The first of her family to get a degree, and she studied rocket
+    science! Kimi is training for an upcoming mission to Mars.'

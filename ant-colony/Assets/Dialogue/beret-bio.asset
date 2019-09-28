@@ -14,7 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commands: []
   sentences:
-  - 'Jean-Pierre Francois:
-
-    Renowned artist, Jean-Pierre is known for his unrelenting pursuit of inspiration.
-    This is just another foray in pursuit of true art.'
+  - 'Jean-Pierre Francois: Renowned artist, Jean-Pierre is known for his unrelenting
+    pursuit of inspiration. This is just another foray in pursuit of true art.'
