@@ -30,17 +30,16 @@ public class ProfileManager : MonoBehaviour
                 profileToShow = profile;
             }
         }
-        GetComponent<ArrayAnimatorScript>().StopAllCoroutines();
+        GetComponent<ArrayAnimatorScript>().Stop();
         GetComponent<SpriteRenderer>().sprite = profileToShow.sprites[0];
         GetComponent<ArrayAnimatorScript>().AnimationArray = profileToShow.sprites;
-        GetComponent<ArrayAnimatorScript>().Play();
     }
 
     void Update() {
-        if (DialogueManager.Instance != null && DialogueManager.Instance.IsCurrentlyInDialogue) {
+        if (DialogueManager.Instance.IsCurrentlyInDialogue) {
             GetComponent<ArrayAnimatorScript>().Play();
         } else {
-            GetComponent<ArrayAnimatorScript>().StopAllCoroutines();
+            GetComponent<ArrayAnimatorScript>().Stop();
         }
     }
     

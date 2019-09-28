@@ -32,7 +32,13 @@ public class ArrayAnimatorScript : MonoBehaviour
         if (isAnimating) {
             return;
         }
+        StopAllCoroutines();
         StartCoroutine(Animate());
+    }
+
+    public void Stop() {
+        isAnimating = false;
+        StopAllCoroutines();
     }
 
     public IEnumerator Animate()
