@@ -51,7 +51,7 @@ public class InputManager : MonoBehaviour {
             GameStateManager.Instance.Restart();
             return;
         }
-        DialogueManager.Instance.DisplayNextSentence();
+        DialogueManager.Instance.Confirm();
 	}
 
 }

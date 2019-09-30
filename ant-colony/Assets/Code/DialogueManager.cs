@@ -11,17 +11,24 @@ public class DialogueManager : MonoBehaviour
     private static DialogueManager _instance;
     public static DialogueManager Instance { get { return _instance; } }
 
-    public Queue<string> sentenceQueue;
+    private Queue<string> sentenceQueue;
 
-    public bool IsCurrentlyInDialogue { get; private set; }
+    private string CurrentSentence;
+
+    public bool IsSpeaking {get; private set;}
+
+    public DialogueNodeAsset.DialogueType? CurrentDialogueType { get; private set;}
+
     TextMeshProUGUI dialogueText;
+    TextMeshProUGUI spacebarHintText;
     DialogueNodeAsset asset;
 
     void Awake() {
          if (_instance == null){
             _instance = this;
         }
-        dialogueText = FindObjectOfType<TextMeshProUGUI>();
+        dialogueText = GameObject.FindGameObjectWithTag("DialogueText").GetComponent<TextMeshProUGUI>();
+        spacebarHintText = GameObject.FindGameObjectWithTag("SpacebarHintText").GetComponent<TextMeshProUGUI>();
     }
     // Start is called before the first frame update
     void Start()
@@ -33,17 +40,15 @@ public class DialogueManager : MonoBehaviour
     {
         Speaker speaker = PlayerController.Instance.gameObject.GetComponent<Speaker>();
         asset = speaker.GetDialogueNodeForType(DialogueType);
-        AdjustTextSizeForDialogueType(DialogueType);
-        if (DialogueType != DialogueNodeAsset.DialogueType.Bio) {
-            IsCurrentlyInDialogue = true;
-        }
+        CurrentDialogueType = DialogueType;
+        AdjustTextSizeForDialogueType((DialogueNodeAsset.DialogueType) CurrentDialogueType);
+        spacebarHintText.enabled = IsCurrentDialogueBioOrDeath();
         sentenceQueue.Clear();
 
         foreach (string sentence in asset.sentences)
         {
             sentenceQueue.Enqueue(sentence);
         }
-
         DisplayNextSentence();
     }
 
@@ -55,20 +60,37 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
-        string currentSentence = sentenceQueue.Dequeue();
+        CurrentSentence = sentenceQueue.Dequeue();
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(currentSentence));
+        StartCoroutine(TypeSentence(CurrentSentence));
     }
 
     IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
+        IsSpeaking = CurrentDialogueType != DialogueNodeAsset.DialogueType.Bio;
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
             yield return null;
         }
+        IsSpeaking = CurrentSentence.Length != dialogueText.text.Length;
     }
+
+    public void Confirm() {
+        if (CurrentSentence.Length != dialogueText.text.Length) {
+            StopAllCoroutines();
+            dialogueText.text = CurrentSentence;
+            IsSpeaking = false;
+        }
+        else if (IsCurrentDialogueBioOrDeath()) {
+            DisplayNextSentence();
+        }
+    }
+
+    public bool IsCurrentDialogueBioOrDeath() {
+        return CurrentDialogueType == DialogueNodeAsset.DialogueType.Bio || CurrentDialogueType == DialogueNodeAsset.DialogueType.Die;
+    } 
 
     private void AdjustTextSizeForDialogueType(DialogueNodeAsset.DialogueType DialogueType) {
         if (DialogueType == DialogueNodeAsset.DialogueType.Bio) {
@@ -81,7 +103,9 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue()
     {
-        IsCurrentlyInDialogue = false;
+        CurrentDialogueType = null;
+        CurrentSentence = null;
+        IsSpeaking = false;
         dialogueText.text = "";
         CommandManager.Instance.addCommands(asset.commands, null);
     }

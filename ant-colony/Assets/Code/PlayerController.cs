@@ -84,7 +84,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     public void OnAxisInput(float horizontal, float vertical) {
-        if (DialogueManager.Instance.IsCurrentlyInDialogue || gameObject == null) {
+        if (DialogueManager.Instance.IsCurrentDialogueBioOrDeath() || gameObject == null) {
             return;
         }
         mVelocity += new Vector3(MovementSpeed * horizontal, MovementSpeed * vertical, 0);

@@ -36,7 +36,7 @@ public class ProfileManager : MonoBehaviour
     }
 
     void Update() {
-        if (DialogueManager.Instance.IsCurrentlyInDialogue) {
+        if (DialogueManager.Instance.IsSpeaking) {
             GetComponent<ArrayAnimatorScript>().Play();
         } else {
             GetComponent<ArrayAnimatorScript>().Stop();

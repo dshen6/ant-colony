@@ -16,5 +16,7 @@ MonoBehaviour:
   - CommandType: 1
     DialogueType: 0
   sentences:
-  - "Youssef Assad Fakir III: Youssef is the heir to the famous Fakir falafel restaurant.
-    Youssef is on a quest to expand his family\u2019s chain above ground.\n"
+  - 'Youssef Assad Fakir III: Youssef is the heir to the famous Fakir falafel restaurant.
+    Youssef is on a quest to expand his family''s chain above ground.
+
+'
